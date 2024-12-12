@@ -5,7 +5,7 @@ import logom from '../logom.svg';
 const Navbar = () => { 
     return (
         <div className="navbar">
-           <img src={logom} alt="" style={{width: '65px', height: '65px'}} />
+           <img src={logom} alt="logo" style={{width: '65px', height: '65px'}} />
             <ul className="nav-menu">
                 <li>Home</li>
                 <li>About me</li>
