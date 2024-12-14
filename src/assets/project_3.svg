@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg preserveAspectRatio="none" version="1.1" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="g" x1="-128.56" x2="-132.94" y1="-59.912" y2="-76.288" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#fff" offset="0"/>
+   <stop offset="1"/>
+  </linearGradient>
+  <radialGradient id="h" cx="0" cy="0" r="149.9" gradientTransform="translate(40 -144)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#f00" offset="0"/>
+   <stop offset="1"/>
+  </radialGradient>
+  <g id="k">
+   <path d="m-94.55-56.4q-12.764-6.4166-16.9-14.9-4.8014-9.9744 2.3-22.8l-51.2 38.85 65.8-1.15z" fill="url(#g)"/>
+   <path d="m241.95-215.8l22.35-41.2-59.75 27.75-16.6 35.5 7.4-3 46.6-19.05m29.65 15.2q-7.5277-7.2246-17.4-9.9-9.8223-2.6754-12.25-5.3l-46.6 19.05 17.9 22.25 58.35-26.1z" fill="#666"/>
+  </g>
+  <g id="l">
+   <path d="m130.8-244q-57.962-7.4387-90.9 36.85-32.963-44.282-90.9-36.85-67.974 22.568-29 101.4 14.182 28.64 33.35 53 21.941 27.964 50.45 50.35 15.17 11.911 32.2 22.25 84.75-46.75 123.75-125.55 39-78.9-28.95-101.45z" fill="url(#h)"/>
+  </g>
+  <path id="i" d="m195.35-196.75l17.9 22.25 58.35-26.1q-7.5277-7.2246-17.375-9.9t-12.275-5.3m-54 22.075l16.6-35.525 59.75-27.75-22.35 41.2m-353.38 144.5q-4.8264-9.9744 2.275-22.8l-51.2 38.85 65.8-1.15q-12.764-6.4166-16.875-14.9z" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.75"/>
+  <path id="j" d="m241.95-215.8l-46.6 19.05-7.4 3.025-19.65 8.05m-279.72 114.38l63.125-25.8" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/>
+ </defs>
+ <g transform="matrix(4.1866 0 0 4.132 733.1 1132.2)">
+  <g transform="translate(55.6 -156.1)">
+   <g transform="translate(-55.6 156.1)">
+    <use xlink:href="#k"/>
+    <use xlink:href="#i"/>
+    <use xlink:href="#j"/>
+   </g>
+  </g>
+  <g transform="translate(39.85 -131)">
+   <g transform="translate(-39.85 131)">
+    <use xlink:href="#l"/>
+   </g>
+  </g>
+ </g>
+</svg>
