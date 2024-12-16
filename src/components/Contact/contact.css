@@ -119,3 +119,15 @@
     transform: scale(1.1);
     transition: 0.3s;
 }
+
+.form-footer {
+    display: flex;
+    align-items: first baseline;
+    gap: 20px;
+}
+
+.result-message {
+    font-size: 16px;
+    color: white; 
+    font-weight: bold;
+}
