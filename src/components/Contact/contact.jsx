@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './contact.css'
 import logom from '../../logom.svg'
 import email from '../../assets/email-icon.svg'
@@ -6,6 +6,37 @@ import location from '../../assets/location.svg'
 import call from '../../assets/call-icon.svg'
 
 const Contact = () => {
+
+    const [result, setResult] = useState("")
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        setResult("Sending....");
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "47f08db2-cf8b-4a3d-a720-288b2dcbe7e4");
+    
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
+        });
+    
+        const data = await response.json();
+    
+        if (data.success) {
+          setResult("Form Submitted Successfully");
+          event.target.reset();
+        } else {
+          console.log("Error", data);
+          setResult(data.message);
+        }
+
+        setTimeout(() => {
+            setResult("");
+        }, 4000);
+      };
+    
+
     return (
         <div id="contact" className="contact">
             <div className="contact-title">
@@ -28,14 +59,17 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <form className="contact-right">
+                <form onSubmit={onSubmit} className="contact-right">
                     <label htmlFor="">Your Name</label>
                     <input type="text" placeholder="Enter your name" name="name" />
                     <label htmlFor="">Your Email</label>
                     <input type="email" placeholder="Enter your email" name="email" />
                     <label htmlFor="">Write your message here</label>
                     <textarea name="message" rows="8" placeholder="Enter your message"></textarea>
-                    <button type="submit" className="contact-submit">Submit now</button>
+                    <div className="form-footer">
+                        <button type="submit" className="contact-submit">Submit now</button>
+                        {result && <span className="result-message">{result}</span>}
+                    </div>
                 </form>
             </div>
         </div>
