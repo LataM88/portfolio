@@ -39,3 +39,8 @@
     color: rgb(35, 85, 160);
     transform: translateY(-5px); 
 }
+
+.anchor-link {
+    text-decoration: none;
+    color: white;
+}
