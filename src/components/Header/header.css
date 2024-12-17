@@ -48,7 +48,7 @@
 .header-action {
     display: flex; 
     flex-direction: row; 
-    align-items: center;
+    align-items: start;
     justify-content: center; 
     gap: 15px; 
     font-size: 24px;
@@ -76,4 +76,43 @@
 
 .header-resume:hover {
     border-color: rgb(10, 104, 104);
+}
+
+@media(max-width:768px) {
+    .header {
+        flex-direction: column; /* Zmienia układ na pionowy */
+        text-align: center; /* Wyśrodkowanie tekstu */
+        gap: 15px; /* Zmniejszenie odstępów */
+    }
+
+    .header img {
+        margin-bottom: 20px;
+        width: 200px; /* Zmniejszenie obrazka */
+        height: 200px;
+    }
+
+    .header h1 {
+        margin-top: 20px;
+        font-size: 32px; /* Zmniejszenie rozmiaru czcionki */
+        word-wrap: break-word; /* Zawijanie słów */
+        overflow-wrap: break-word;
+    }
+
+    .header p {
+        font-size: 18px; /* Mniejsza czcionka */
+        line-height: 1.5;
+        word-break: break-all; /* Przenoszenie każdego słowa do nowej linii */
+        width: 100%; /* Upewnienie się, że zajmuje całą szerokość */
+        margin: 10px 0;
+    }
+
+    .header-action {
+        flex-direction: row; /* Przyciski jeden pod drugim */
+        gap: 15px;
+    }
+
+    .header-connect, .header-resume {
+        padding: 15px 20px; /* Zmniejszenie przycisków */
+        font-size: 16px;
+    }
 }
