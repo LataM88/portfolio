@@ -66,3 +66,34 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
 }
+
+@media(max-width:768px) {
+    .my-work {
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: normal;
+    }
+    .my-work-title h1 {
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .my-work-title img {
+        width: 130px;
+        margin-right: -20px;
+    }
+    .my-work-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .my-work-container img {
+        width: 100%;
+        height: 100%;
+    }
+    .my-work-showmore {
+        padding: 20px 40px;
+        font-size: 18px;
+        margin: 50px auto;
+        cursor: pointer;
+    }
+}

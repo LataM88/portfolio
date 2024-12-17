@@ -1,16 +1,29 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './navbar.css';
 import logom from '../logom.svg';
 import AnchorLink from '../AnchorLink'
+import menu_open from '../assets/menu.svg'
+import menu_close from '../assets/menu.svg'
 
 
 const Navbar = () => {
     const [menu, setMenu] = useState("home");
+    const menuRef = useRef();
+
+    const openMenu = () => {
+        menuRef.current.style.right = "0";
+    }
+
+    const closeMenu = () => {
+        menuRef.current.style.right = "-350px";
+    }
 
     return (
         <div className="navbar">
             <img src={logom} alt="logo" style={{ width: '65px', height: '65px' }} />
-            <ul className="nav-menu">
+            <img src={menu_open} onClick={openMenu} alt="menu" className="nav-mob-open" style={{width: '40px', height: '40px'}}/>
+            <ul ref={menuRef} className="nav-menu">
+                <img src={menu_close} onClick={closeMenu} alt="menu_close" className="nav-mob-close" style={{width: '40px', height: '40px'}}/>
                 <li><AnchorLink className="anchor-link" offset={50} href="#home">
                     <p
                         onClick={() => setMenu("home")}
