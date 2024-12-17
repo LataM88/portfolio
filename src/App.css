@@ -44,9 +44,12 @@
   padding: 0;
 }
 body {
-  height: 100vh;
-  background-color: black;
+  height: 100%;
+  background-image: url('./assets/background.jpg');
+  background-size: cover; /* Dopasowanie tła */
+  background-repeat: no-repeat; /* Zapobieganie powtarzaniu */
+  background-attachment: fixed; /* Tło pozostaje nieruchome przy przewijaniu */
+  background-position: center; /* Wyśrodkowanie tła */
   color: white;
-  font-family: 'Lato';
+  font-family: 'Lato', sans-serif;
 }
-
