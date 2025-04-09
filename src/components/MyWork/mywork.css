@@ -30,7 +30,7 @@
     transition: 0.6s;
     cursor: pointer;
     align-items: center;
-    background: linear-gradient(267deg, rgb(10, 104, 104) 32%, rgb(35, 85, 160)); /* Matches navbar button color */
+    background: linear-gradient(267deg, rgb(10, 104, 104) 32%, rgb(35, 85, 160)); 
 }
 
 .my-work-showmore:hover {
@@ -60,7 +60,7 @@
 
 .my-work-title h1 {
     padding: 0px 30px;
-    font-size: 72px; /* Reduced size */
+    font-size: 72px; 
     font-weight: 600;
 }
 
@@ -74,7 +74,7 @@
 }
 
 .github-icon {
-    width: 80px; /* Reduced size */
+    width: 80px; 
     height: 80px;
     transition: transform 0.3s;
     cursor: pointer;
