@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/navbar';
-import Header from './components/Header/header';
+import Hero from './components/Hero/hero';
 import About from './components/About/about';
 import Services from './components/Services/services';
 import MyWork from './components/MyWork/mywork';
@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <Header />
+      <Hero />
       <About />
       <Services />
       <MyWork />

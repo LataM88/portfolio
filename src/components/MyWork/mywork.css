@@ -30,11 +30,14 @@
     transition: 0.6s;
     cursor: pointer;
     align-items: center;
+    background: linear-gradient(267deg, rgb(10, 104, 104) 32%, rgb(35, 85, 160)); /* Matches navbar button color */
 }
 
 .my-work-showmore:hover {
     gap: 30px;
     transition: 0.6;
+    background: white;
+    color: black;
 }
 
 .my-work-showmore img {
@@ -57,14 +60,28 @@
 
 .my-work-title h1 {
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 72px; /* Reduced size */
     font-weight: 600;
 }
 
 .my-work-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #d4d4d4;
+    height: 200px;
+}
+
+.github-icon {
+    width: 80px; /* Reduced size */
+    height: 80px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.github-icon:hover {
+    transform: scale(1.1);
 }
 
 @media(max-width:768px) {

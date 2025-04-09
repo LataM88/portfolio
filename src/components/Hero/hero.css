@@ -1,0 +1,79 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  min-height: 600px;
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding: 60px 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  max-width: 900px;
+}
+
+.hero-profile-image {
+  width: 350px;
+  height: 350px;
+  transition: transform 0.3s;
+}
+
+.hero-profile-image:hover {
+  transform: scale(1.1);
+}
+
+.hero-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.hero-button {
+  padding: 15px 25px;
+  width: fit-content;
+  font-size: 1.3rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(267deg, rgb(10, 104, 104) 32%, rgb(35, 85, 160));
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #00bcd4;
+  transform: scale(1.1);
+}
+
+.hero .anchor-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-profile-image {
+    margin-bottom: 20px;
+  }
+}
